@@ -31,49 +31,51 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<span class="image main"><img src="../images/server-wide.jpg" alt="" /></span>
-                <h1>Accessibility techniques</h1>
-                <p>
-                  There are also numerous accessibility features that web server scripting can allow for the employment of
-                  on a per-user or per-system basis. These features are outlined below.
+                <h1>Server-side code</h1>
+								<p>
+									Server-side code is code that exists solely on the web server itself, and isn't seen at all by the client. Server-
+									side code is often used to perform operations on the server in response to the client opening up certain web pages
+									or performing certain actions on the client-side. It can also be used to generate HTML that is then sent to the
+									client-side, a technique that is known as “HTML Templating.” Server-side code is often referred to as “back-end code.”
+								</p>
+								<p>
+									All code written with server-side scripts is executed by the server itself, which means that it isn't seen by the
+									client and, therefore, cannot be modified by the user in the way client-side code can. This code does have its own
+									security vulnerabilities, however, which largely stem from the fact that it often has access to the entire server’s
+									resources.
+								</p>
+								<p>
+									There are multiple server-side languages out there, as well as multiple interpreters to allow these languages to be used
+									on the web. Some common examples of server-side scripting languages are Ruby, the PHP: Hypertext Preprocessor, and
+									Microsoft's ASP.NET, though due to the rising popularity of the NodeJS runtime program, JavaScript is likely to join this
+									list soon if it hadn't already.
+								</p>
+								<p>
+									Server-side code has its own uses that are separate from client-side code, such as secure form validation and providing
+									persistence of information:
+								</p>
+
+								<h2>Form validation</h2>
+								<p>
+                  A major advantage of server-side code is that it cannot be modified by the client, meaning that it can safely be used to
+									perform actions that can be sensitive. One such action is the validation of what a user has entered into a HTML form.
+									Server-side scripts can read what a user has entered into a form on a website and perform a series of actions to ensure
+									this information matches a certain criteria set by the website owner, processing it only partially or even refusing to
+									process it at all if not, at which point it would often display an error message to the user. This can be useful for when
+									a user has to submit their email address to sign up for a newsletter or a website, as the site can actually ensure that
+									the email address is well-formed and valid before storing it.
                 </p>
 
-								<h2>Alternative text</h2>
+								<h2>Persistence of information</h2>
 								<p>
-                  Web servers can be programmed to prove alternative ways of displaying or phrasing specific keywords or
-                  phrases in the original document being served to the user, or even the entire document itself. An example
-                  of this can be found when working with websites that provide locale-based automatic translations of a
-                  webpage’s content so that it may be read in a user’s native language instead of the universal English
-                  language, potentially making it easier for the end user to read the content of the site as they don't have
-                  to deal with mentally translating the content themselves. A second example of alternative text can be for
-                  the website to automatically “dumb down” certain content or replace it with user-requested substitutes on
-                  a per-user basis, allowing the reader to feel more comfortable with what they are reading.
-                </p>
-
-								<h2>Resizable fonts</h2>
-								<p>
-                  Web server scripts, due to their ability to inject HTML into the final page before it is sent to the end
-                  user’s browser, can also provide the ability to resize fonts and have the new size persist across pages,
-                  potentially making the site easier to use by those who have trouble with their vision or need extra help with
-                  reading content in front of them.
-                </p>
-
-								<h2>Support for screen readers</h2>
-								<p>
-                  A major ability of web server scripting is to make a website accessible to those who use screen readers.
-                  Because screen readers are designed to read through text content of a website in a meaningful way, they are
-                  often hard to code a website around due to the often commonplace use of images on web pages. Web server
-                  scripts can be used to provide additional information for, or even text to replace image content in the
-                  event that the web page is loaded in a Screen Reader, allowing the reader to more easily read the page
-                  contents out to its user.
-                </p>
-
-								<h2>Adjustable fonts</h2>
-								<p>
-                  The ability for web server scripts to inject HTML into the final file sent to the browser window means that
-                  scripts can insert custom CSS, meaning that the default font family property for a website can be overridden
-                  inline or even via custom linked CSS files. This allows alternative fonts to be provided in place of the website
-                  default, meaning that the web pages can be made easier to read for those that require a specific font due to
-                  vision troubles or reading difficulties.
+                  Server-side code can be used to allow a server to store information that has been given to it by a specific client to be
+									used later on in the website’s operation. This would often be achieved by linking the code to a database that also runs on
+									the server, and allows the website to hold onto data that has been given to it, such as credentials for a registration form
+									or personally-identifiable information. It can store usernames and passwords as “accounts”, allowing a user to log into their
+									account later on by simply entering the username and password given when it was created, and allowing the website to check to
+									ensure those credentials are correct or not. Server-side code can do this despite the “statelessness” of the Hypertext
+									Transfer Protocol, because all the information is stored solely on the server and often kept track of via a unique identifier
+									(a “Session ID”) given to each client.
                 </p>
 
                 <ul class="actions">
