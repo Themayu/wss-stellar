@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Security issues | Security &amp; Ethical Issues - WSS A1 Demo - Stellar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Security issues</h1>
+						<p>Security &amp; Ethical Issues</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="../images/security-wide.jpeg" alt="" /></span>
+                <h1>Security issues</h1>
+								<p>
+									The first category of issues with server side scripting is the security problems that can be opened up by improper coding,
+									lack of validation in certain areas, or even the accidental exposure of information where you wouldn't expect information
+									to even be accessible. Most errors can be split up even further and placed under four main headers, which are described
+									below:
+								</p>
+
+								<h2>Code vulnerabilities</h2>
+								<p>
+									Vulnerabilities can be opened up in a website in numerous different ways, each with their own different ways of affecting
+									the site’s usability and functionality. There are two common methods of attacking a website that rely on little more than
+									the programmer's own failure to use specific techniques when storing and accessing information: SQL injection and Cross-
+									Site Scripting (XSS) attacks.
+								</p>
+								<p>
+									SQL injection, as the name suggests, deals with injecting values into an SQL query that would then later be executed against
+									a database to store or retrieve information. SQL injection can be used to log into accounts without using a password, insert
+									or destroy arbitrary data on a database - even removing entire schemes if the attacker wishes to - or even create
+									administrator-level accounts on the website. SQL injection can also be used to bypass most protections against XSS attacks,
+									which can potentially double the amount of danger it poses to a website.
+								</p>
+								<p>
+									Cross-Site Scripting is a second problem when it comes to attempting to mitigate vulnerabilities in a program, since it mostly
+									deals with how information is actually parsed before being inserted into a database. If there are no safeguards against HTML
+									being inserted into a database entry that contains a user’s profile page, for example, that user could insert a HTML “script”
+									tag containing custom JavaScript that would then be executed by any browser being used to access that user page. Since JavaScript
+									has the ability to access other websites, the script in question could potentially push a user’s session to an external site,
+									allowing the owner of this second site to steal the user’s account.
+								</p>
+
+								<h2>Bad scripting</h2>
+								<p>
+									Vulnerabilities can also be opened up outside of the database and inside the actual web pages themselves through improper use of
+									server side scripting. This can open up “backdoors” into the site that can be used by attackers to inject their own content into
+									the website’s pages or even extract things such as user credentials or API keys used to authenticate with other services. It could
+									also allow attackers to use the web interface to upload and execute malicious software or scripts on the server. When writing a
+									website, it is paramount for a developer to ensure that they leave as few holes as possible inside their scripts; preferably zero
+									at all if possible.
+                </p>
+
+								<h2>Secure Socket Layer (SSL)</h2>
+								<p>
+									The use of Transport Layer Security, especially SSL, on a website can seriously increase the security of that website by encrypting
+									information passed between the server and the client. This can render information such as login details and banking information as
+									unreadable by anyone “listening in” on the network connection used to access a website. SSL requires a signed public/private key
+									pair to be accessible to the website’s code, so that it may encrypt information being passed to the client and decrypt information
+									being passed to it from the client. SSL itself isn't enough, however, as it is easy to sign an “SSL certificate” yourself and use
+									that for your website. Use of a trusted SSL certificate signing company to sign your SSL certificate can ensure that visitors are
+									confident that your website is safe and secure, and that information they enter on it isn't likely to end up in the hands of others.
+								</p>
+
+								<h2>Password liabilities</h2>
+								<p>
+									A major issue that arises when speaking about storage of user credentials is the topic of how to keep such credentials safe and
+									secure. This issue itself mainly arises when passwords are not secured in a safe, non-reversible way such as vis a hashing algorithm
+									before being stored in a database. Password liabilities can also become a major problem when there is inadequate protection against
+									things such as brute-force and dictionary attacks against an account in an attempt to get its password. Brute force attempts every
+									single combination that is available in an attempt to catch passwords that are non-standard, while a dictionary attack is an attack
+									that uses a pre-compiled list in order to work much faster at the cost of potentially being unsuccessful.
+								</p>
+								<p>
+									These methods are often invisible to websites, however a script can easily be programmed “guess” that an attack is occurring by
+									detecting a large amount of incorrect login attempts against a specific account within a short timeframe.
+								</p>
+
+                <ul class="actions">
+                  <li><a href="../index.html" class="button special">Back to main page</a></li>
+                </ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="special copyright">
+							<h2>About this site</h2>
+							<p>This website was created as my entry for Assignment 2 of Web Server Scripting. It is for purely educational purposes only.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>57 Hunter Road &bull; Cannock, Staffordshire &bull; UK</dd>
+								<dt>Phone</dt>
+								<dd>+44 7522 969369</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:r1726908@student.southstaffs.ac.uk">r1726908@student.southstaffs.ac.uk</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://twitter.com/TricksterZuris" class="icon fa-twitter alt" target="_blank"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/themayu" class="icon fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">Modified by <a href="http://zuris.strangled.net" target="_blank">Jamie Ridding</a> | Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
